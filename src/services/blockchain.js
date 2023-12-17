@@ -9,15 +9,6 @@ const contractAddress = address.address
 const contractAbi = abi.abi
 let tx
 
-// const connectWallet = async () => {
-//   try {
-//     if (!ethereum) return alert('Please install Metamask')
-//     const accounts = await ethereum.request({ method: 'eth_requestAccounts' })
-//     setGlobalState('connectedAccount', accounts[0]?.toLowerCase())
-//   } catch (error) {
-//     reportError(error)
-//   }
-// }
 
 
 

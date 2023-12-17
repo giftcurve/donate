@@ -2,10 +2,11 @@ require('@nomiclabs/hardhat-waffle')
 require('dotenv').config()
 
 module.exports = {
-  defaultNetwork: 'localhost',
+  defaultNetwork: 'mainnet',
   networks: {
-    localhost: {
-      url: 'http://127.0.0.1:8545',
+    mainnet: {
+      url: 'https://rpc.ankr.com/eth',
+      accounts: [process.env.PRIVATE_KEY],
     },
   },
   solidity: {
