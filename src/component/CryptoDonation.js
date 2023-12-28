@@ -1,5 +1,5 @@
 import { setGlobalState, useGlobalState } from "../store/Index";
-import Buttons from "../component/Buttons";
+import Buttons from "./Buttons";
 
 const CryptoDonation = () => {
   const [cryptoDonateModal] = useGlobalState("cryptoDonateModal");

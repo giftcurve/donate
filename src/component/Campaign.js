@@ -4,7 +4,7 @@ import { setGlobalState, truncate, useGlobalState } from "../store/Index";
 import Moment from "react-moment";
 import { globe } from "../res/image/Images";
 import Buttons from "./Buttons";
-import CryptoDonation from "../junk/CryptoDonation";
+import CryptoDonation from "./CryptoDonation";
 
 const Campaign = () => {
   const [projects] = useGlobalState("projects");
@@ -461,9 +461,12 @@ console.log(ethToUsdRate)
        Donate Using Crypto
          </button>
           </div>
+          /
+          {/* this is for mobile */}
           <CryptoDonation />
         </div>
       </div>
+      {/* this is for destop */}
       <Buttons />
       
     </>

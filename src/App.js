@@ -22,7 +22,7 @@ import { setGlobalState } from "./store/Index";
 
 
 // 1. Get projectId at https://cloud.walletconnect.com
-const projectId = "a87552b89c0d84428b26ed4727200087" 
+const projectId = process.env.REACT_APP_PROJECT_ID
 if (!projectId) {
   throw new Error('provide PROJECT ID')
 }
@@ -83,7 +83,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Campaign />} />
           <Route path="create" element={<Demo />} />
-          <Route path="/buttons" element={<Buttons />} />        
+          <Route path="/buttons" element={<Buttons />} />       
         </Routes>
         ) : null }
 
@@ -106,20 +106,3 @@ function App() {
 
 export default App;
 
-
-
-
-
-// import React from 'react';
-// import CryptoConverter from './component/CryptoConverter';
-
-
-// const App = () => {
-//   return (
-//     <div>
-//       <CryptoConverter defaultCryptoSymbol="bitcoin" defaultAmountUSD={100} />
-//     </div>
-//   );
-// };
-
-// export default App;
