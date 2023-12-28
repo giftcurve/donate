@@ -6,7 +6,7 @@ module.exports = {
   networks: {
     mainnet: {
       url: 'https://rpc.ankr.com/eth',
-      accounts: [process.env.PRIVATE_KEY],
+      accounts: [`0x${process.env.PRIVATE_KEY}`],
     },
   },
   solidity: {
